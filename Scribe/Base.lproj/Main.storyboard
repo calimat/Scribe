@@ -45,6 +45,11 @@
                                     <constraint firstAttribute="height" constant="60" id="exK-nj-54h"/>
                                     <constraint firstAttribute="width" constant="60" id="qZa-Gl-6gb"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY &amp; TRANSCRIBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiL-Lc-C76">
                                 <rect key="frame" x="91" y="631" width="193" height="28"/>
@@ -59,9 +64,17 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-wj-ps0">
+                                <rect key="frame" x="157.5" y="563.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="SU9-Cm-Usy"/>
+                                    <constraint firstAttribute="height" constant="60" id="nQM-AC-VmL"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="W5L-wj-ps0" firstAttribute="centerX" secondItem="zyW-0s-00z" secondAttribute="centerX" id="1qb-r0-jjy"/>
                             <constraint firstItem="zyW-0s-00z" firstAttribute="top" secondItem="FdR-xv-iHy" secondAttribute="bottom" constant="20" id="22H-jX-J89"/>
                             <constraint firstItem="wiL-Lc-C76" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Hh-Qo-CFg"/>
                             <constraint firstAttribute="trailing" secondItem="FdR-xv-iHy" secondAttribute="trailing" constant="20" id="4Cl-Vl-G3H"/>
@@ -70,6 +83,7 @@
                             <constraint firstItem="XVe-bm-xmz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EOI-lQ-N0o"/>
                             <constraint firstItem="zyW-0s-00z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0P-Dp-dIP"/>
                             <constraint firstItem="FdR-xv-iHy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RzN-yT-5HH"/>
+                            <constraint firstItem="W5L-wj-ps0" firstAttribute="centerY" secondItem="zyW-0s-00z" secondAttribute="centerY" id="Xie-Al-e1B"/>
                             <constraint firstAttribute="trailing" secondItem="XVe-bm-xmz" secondAttribute="trailing" id="caC-MW-QNU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wiL-Lc-C76" secondAttribute="bottom" constant="8" id="nZD-aa-zkS"/>
                             <constraint firstItem="FdR-xv-iHy" firstAttribute="top" secondItem="XVe-bm-xmz" secondAttribute="bottom" constant="20" id="oPk-Nf-Ic0"/>
